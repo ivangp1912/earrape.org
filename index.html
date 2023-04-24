@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Audio Distortion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Harmonia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Audio Distortion</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Upload an audio file or enter a YouTube link</h2>
+        <input type="file" id="fileInput" accept=".mp3,.mp4" />
+        <div id="uploadConfirmation"></div>
+        <br>
+        <input type="text" id="youtubeUrlInput" placeholder="Enter a YouTube link" />
+        <br>
+        <button id="youtubeButton">Load</button>
+        <button id="distortButton" disabled>Distort Audio</button>
+      </section>
+      <section>
+        <h2>Controls</h2>
+        <audio id="audioElement"></audio>
+        <button id="playButton" disabled>Play</button>
+        <button id="pauseButton" disabled>Pause</button>
+        <button id="stopButton" disabled>Stop</button>
+        <button id="downloadButton" disabled>Download Distorted Audio</button>
+      </section>
+    </main>
+    <footer>
+      <p>Created by ChatGPT</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.0/lame.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
